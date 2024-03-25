@@ -2,6 +2,24 @@
   font-family: myFont;
   src: url(font/Misologist.otf);
 }
+img, p, button, h1, h2, h3, li{
+  animation:  fadeInUp 1s ease-in;
+}
+.about-pic{
+  animation:  fadeInUp 1s ease-in;
+
+}
+@-webkit-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
+}
+
 @media screen and (max-width: 1400px) {
   #profile {
     height: 83vh;
@@ -107,4 +125,5 @@
 }
 h1{
   font-family: myFont;
+  letter-spacing: 1px;
 }
